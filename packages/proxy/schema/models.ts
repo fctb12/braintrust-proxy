@@ -106,7 +106,23 @@ export const AvailableModels: { [name: string]: ModelSpec } = {
     output_cost_per_mil_tokens: 0.6,
     parent: "gpt-4o-mini",
   },
-
+  "o4-mini": {
+    format: "openai",
+    flavor: "chat",
+    multimodal: true,
+    input_cost_per_mil_tokens: 1.1,
+    output_cost_per_mil_tokens: 4.4,
+    o1_like: true,
+  },
+  "o4-mini-2025-04-16": {
+    format: "openai",
+    flavor: "chat",
+    multimodal: true,
+    input_cost_per_mil_tokens: 1.1,
+    output_cost_per_mil_tokens: 4.4,
+    o1_like: true,
+    parent: "o4-mini",
+  },
   "o3-mini": {
     format: "openai",
     flavor: "chat",
@@ -123,6 +139,23 @@ export const AvailableModels: { [name: string]: ModelSpec } = {
     output_cost_per_mil_tokens: 4.4,
     o1_like: true,
     parent: "o3-mini",
+  },
+  o3: {
+    format: "openai",
+    flavor: "chat",
+    multimodal: true,
+    input_cost_per_mil_tokens: 10.0,
+    output_cost_per_mil_tokens: 40,
+    o1_like: true,
+  },
+  "o3-2025-04-16": {
+    format: "openai",
+    flavor: "chat",
+    multimodal: true,
+    input_cost_per_mil_tokens: 10.0,
+    output_cost_per_mil_tokens: 40,
+    o1_like: true,
+    parent: "o3",
   },
   o1: {
     format: "openai",
